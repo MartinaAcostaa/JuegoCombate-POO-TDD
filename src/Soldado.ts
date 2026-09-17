@@ -1,15 +1,8 @@
-export class Soldado {
-  private vida: number;
+import { Combatiente } from "./Combatiente";
 
-  constructor() {
-    this.vida = 1;
+export class Soldado extends Combatiente {
+    constructor() {
+        super(1); // Un soldado tiene 1 punto de vida al ser creado
     }
-
-    public estaVivo(): boolean {
-        return this.vida > 0;
-    }   
-
-    public recibirDisparo(danio: number): void {
-        this.vida -= danio;
-    }   
 }
+
