@@ -8,4 +8,8 @@ export class Soldado {
     public estaVivo(): boolean {
         return this.vida > 0;
     }   
+
+    public recibirDisparo(danio: number): void {
+        this.vida -= danio;
+    }   
 }
