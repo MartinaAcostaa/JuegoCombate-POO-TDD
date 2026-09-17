@@ -3,13 +3,9 @@ export class Soldado {
 
   constructor() {
     this.vida = 1;
-  }
+    }
 
-  public estaVivo(): boolean {
-    return this.vida > 0;
-  }
-
-  public recibirDisparo(danio: number): void {
-    this.vida -= danio;
-  } 
+    public estaVivo(): boolean {
+        return this.vida > 0;
+    }   
 }
